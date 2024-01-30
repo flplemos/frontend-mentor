@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "WorkSans-Regular";
+    src: url('/assets/fonts/static/WorkSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "WorkSans-Bold";
+    src: url('/assets/fonts/static/WorkSans-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #F9EEFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    overflow-x: hidden;
+    
+}
+
+
+.background-image {
+    background-image: url('/assets/images/background-pattern-desktop.svg');
+    background-position: top;
+    height: 260px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'WorkSans-Bold';
+    text-align: left;
+    
+}
+
+h1 img {
+    padding-right: 20px;
+}
+
+.cartao {
+
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    min-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+   
+.questions {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.questions button {
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'WorkSans-Bold';
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+}
+
+.resposta {
+    font-family: 'WorkSans-Regular';
+    text-align: left;
+    color: gray;
+    opacity: 0;
+    display: none;
+    font-size: 0.9em;
+    text-align: justify;
+    padding-bottom: 5px;
+}
+
+.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+hr {
+    color: rgba(128, 128, 128, 0.247);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    
+    background-color: #D5E1EF;
+    padding: 10px;
+    text-align: center;
+  
+  }
+  

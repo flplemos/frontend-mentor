@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px) {
+    
+    .cartao {
+         /* Ajuste a margem conforme necessário */
+        max-width: 80%; /* Define uma largura máxima menor para melhor visualização em telas pequenas */
+    }
+
+    .questions {
+        padding: 10px; /* Ajuste o preenchimento conforme necessário */
+    }
+
+    .questions button {
+        font-size: 0.9em; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    .resposta {
+        font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
