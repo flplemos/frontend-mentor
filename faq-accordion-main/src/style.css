@@ -1,6 +1,6 @@
 @font-face {
     font-family: "WorkSans-Regular";
-    src: url('/assets/fonts/static/WorkSans-Regular.ttf');
+    src: url('/frontend-mentor/faq-accordion-main/assets/fonts/static/WorkSans-Regular.ttf');
 }
 
 @font-face {
@@ -28,7 +28,7 @@ body {
 
 
 .background-image {
-    background-image: url('/assets/images/background-pattern-desktop.svg');
+    background-image: url('/frontend-mentor/faq-accordion-main/assets/images/background-pattern-desktop.svg');
     background-position: top;
     height: 260px;
     position: relative;
