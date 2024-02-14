@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+
+    .card {
+        max-width: 250px;
+    }
+
+    .imgarticle {
+        max-width: 250px;
+    }
+
+   
+}
