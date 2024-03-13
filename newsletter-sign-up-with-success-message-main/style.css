@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url('assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "RobotoRegular";
+}
+
+body {
+    background-color: #37384E;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.popup {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 800px;
+    max-height: 500px;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+    
+}
+
+
+
+
+.img-container {
+    flex: 0 0 auto; /* Não cresce nem encolhe */
+    order: 1; /* Altera a ordem para aparecer após o conteúdo em telas menores */
+}
+
+/* Conteúdo ocupará todo o espaço restante */
+.popup > div {
+    flex: 1;
+}
+
+
+
+
+
+.icon {
+    width: 20px;
+}
+
+.texticon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 0.9em;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+
+.uptext h1 {
+    font-family: "RobotoBold";
+    padding: 32px;
+    padding-bottom: 5px;
+    font-size: 2.5em;
+    margin: auto;
+    justify-content: center;
+}
+
+.uptext p {
+    font-family: "RobotoRegular";
+    font-size: 0.9em;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+
+.img1 {
+    width: 100%;
+}
+
+.downtext {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 20px; /* Espaço opcional entre os blocos */
+  }
+
+  .downtext label,
+  .downtext input,
+  .downtext button {
+    margin-bottom: 10px; /* Espaço entre os elementos */
+  }
+
+  .downtext label {
+    font-family: "RobotoBold";
+    font-size: 0.8em;
+    margin-top: 15px;
+  }
+
+  .downtext input {
+    width: 89%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-color: gray;
+  }
+
+  .downtext button {
+    width: 90%;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #212642;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    
+  }
+
+  input::placeholder {
+    padding-left: 40px; /* Adiciona espaçamento à esquerda */
+}
+
+#error-mail {
+    font-size: 0.7em;
+    margin-left: 40%;
+    color: crimson;
+    
+}
+
+.downtext input:invalid{
+    border-color: crimson;
+    
+}
+
+.downtext input:focus{
+    outline: none;
+}
+
+.downtext input:focus:invalid{
+    box-shadow: none;
+}
+
+.desativado {
+    display: none;
+    opacity: 0;
+}
+
+.ativado {
+    display: flex;
+    opacity: 1;
+}
+
+#newcard {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    
+    max-width: 400px;
+    
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+}
+
+#newcard img {
+    margin-right: 80%;
+    width: 15%;
+}
+
+#newcard h1 {
+    font-size: 2.5em;
+    text-align: left;
+    justify-content: center;
+    font-family: "RobotoBold";
+    width: 70%;
+    padding-top: 15px;
+    padding-right: 70px;
+    
+
+}
+
+#newcard p {
+    font-family: "RobotoRegular";
+    padding: 15px;
+    
+}
+
+#voltar {
+    width: 90%;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #212642;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.attribution {
+    position: absolute;
+    margin-top: 900px;
+    
+    background-color: #37384E; /* Cor de fundo do rodapé */
+    padding: 10px 0; /* Adiciona algum espaço interno */
+    text-align: center; /* Centraliza o conteúdo */
+    color: #ffffff; /* Cor do texto */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+.attribution a {
+    text-decoration: none;
+    transition: 0.4s ease-in;
+    padding: 2px;
+  }
+  
+  .attribution a:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 8%;
+    margin: 3px;
+  }

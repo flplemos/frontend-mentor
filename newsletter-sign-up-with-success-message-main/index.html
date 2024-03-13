@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="src/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <article class="popup">
+      <div class="img-container"><img src="assets/images/illustration-sign-up-desktop.svg" alt="imagemdesktop" class="img1"></div>
+      <div class="popup-content">
+        <div class="uptext">
+          <h1>Stay updated!</h1>
+          <p class="subtitulo">Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+
+
+
+        <div class="texticon">
+          <img src="assets/images/icon-success.svg" alt="icon sucess" class="icon">
+          <p>Product discovery and building what matters</p>
+        </div>
+
+
+
+        <div class="texticon">
+          <img src="assets/images/icon-success.svg" alt="icon sucess" class="icon">
+          <p>Measuring to ensure updates are a sucess</p>
+        </div>
+
+        <div class="texticon">
+          <img src="assets/images/icon-success.svg" alt="icon sucess" class="icon">
+          <p>And much more!</p>
+        </div>
+
+
+        
+          <div class="downtext">
+            <label for="email">Email adress <span id="error-mail"></span></label>
+            
+            <input type="email" id="email" placeholder="     email@company.com" onblur="validarEmail()" onfocus="redefinirMsg()">
+            
+            <button id="enviar" onclick="Enviar()">Subscribe to monthly newsletter</button>
+          </div>
+        
+      </div>
+    </article>
+    <div class="desativado" id="newcard">
+      <img src="assets/images/icon-success.svg" alt="icon sucess">
+      <h1>Thanks for subscribing!</h1>
+      <p id="emailDisplay"></p>
+      <button id="voltar" onclick="Voltar()">Dimiss message</button>
+    </div>
+  </main>
+  
+ <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/flplemos">Felipe Lemos</a>.
+  </div>
+
+
+</body>
+</html>
