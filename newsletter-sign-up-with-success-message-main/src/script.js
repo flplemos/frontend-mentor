@@ -24,7 +24,7 @@ function Enviar(){
     var proxpage = document.querySelector('.desativado');
     var emailDisplay = document.getElementById('emailDisplay'); // Novo elemento
 
-    if (email.checkValidity()){
+    if (email.checkValidity() && email.value.trim() !== ''){
         popup.classList.toggle("desativado");
         proxpage.classList.toggle("ativado");
         
