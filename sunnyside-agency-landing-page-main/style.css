@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+
+.fraunces-700 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.fraunces-900 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+  
+
+
+.barlow-semibold {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    font-style: normal;
+  }
+  
+
+  
+ 
+
+
+#menu{
+    background-color: #3cbdff;
+    
+}
+
+#menu1{
+color: #ffff;
+}
+
+#teste3 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#teste2{
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+#teste4{
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+#footer{
+    text-align: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color:  #8fd3c5;
+}
+
+.teste1{
+    background-color: #3cbdff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* background-image: url('./images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+     */
+    
+}
+
+.imghead{
+    
+   height: 600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url('./images/mobile/image-header.jpg');
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  
+}
+
+.imghead h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 4em;
+}
+
+.seta {
+    margin-top: 50px;
+   
+    height: 190px;
+}
+
+.h600{
+    height: 600px;
+}
+
+.h500 {
+    height: 500px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.h700 {
+    height: 700px;
+}
+
+.h400 {
+    height: 400px;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h376 {
+    height: 376px;
+}
+
+#egg {
+    background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url('./images/mobile/image-transform.jpg');
+}
+
+#imgpink {
+    background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url('./images/mobile/image-stand-out.jpg');
+}
+
+
+#cereja {
+    padding-top: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/mobile/image-graphic-design.jpg'); 
+    text-align: center;
+}
+
+#laranja{
+    padding-top: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/mobile/image-photography.jpg');
+    text-align: center;
+    
+}
+
+#background {
+    background-color: #fffbf8;
+}
+
+.bgfooter {
+    background-color:  #8fd3c5;
+}
+
+.lead {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.card {
+    border: none;
+    border-radius: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.acard {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.829);
+    border-radius: 5%;
+    border-bottom: 7px solid #fdf2ba;
+}
+
+.text2 {
+    color: rgba(0, 0, 0, 0.644);
+}
+
+.subtexto {
+    
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.767);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.avatar {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.client {
+    margin-bottom: 0px;
+    background-color: #ffff;
+    padding-top: 100px;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-size: 1em;
+    color: gray;
+    width: 100%;
+}
+
+#garrafa{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+}
+
+#prato{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/mobile/image-gallery-orange.jpg');
+}
+
+#casquinha{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/mobile/image-gallery-cone.jpg');
+}
+
+#sugarcube{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+}
+
+
+.imgrodape {
+    width: 100%;
+    height: 100%;
+}
+
+.h1footer {
+    color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footerlink {
+    margin-top: 40px;
+    
+    text-align: center;
+    align-items: center;
+}
+
+.linkft{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.548);
+    text-decoration: none;
+    padding: 30px;
+}
+
+.buttonrodape {
+    margin-top: 0px;
+    padding: 15px;
+}
+
+.amenu {
+    
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#testepad {
+    
+    max-width: 100%;
+}
+
+.btnmenu {
+    padding: 6px;
+    color: black;
+}
+
+.btnmenu1 {
+    padding: 0px;
+    
+}
+
+.cred {
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 0.5em;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .imghead {
+        background-image: url('images/desktop/image-header.jpg'); /* Especifica a imagem de fundo para telas maiores */
+    }
+
+    .seta {
+        margin-top: 95px;
+        height: 80px;
+    }
+
+    #egg {
+        background-image: url('images/desktop/image-transform.jpg');
+    }
+
+    #imgpink {
+        background-image: url('./images/desktop/image-stand-out.jpg');
+    }
+
+    #cereja {
+        
+        background-image: url('./images/desktop/image-graphic-design.jpg'); 
+        
+        
+    }
+
+    #laranja {
+        background-image: url('images/desktop/image-photography.jpg');
+    }
+
+    #garrafa{
+       
+        background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+    }
+    
+    #prato{
+        
+        background-image: url('./images/desktop/image-gallery-orange.jpg');
+    }
+    
+    #casquinha{
+        
+        background-image: url('./images/desktop/image-gallery-cone.jpg');
+    }
+    
+    #sugarcube{
+       
+        background-image: url('images/desktop/image-gallery-sugarcubes.jpg');
+    }
+
+}
+
+@media screen and (min-width: 671px) {
+    #cereja {
+        padding-top: 480px;
+    }
+}
+
+@media screen and (min-width: 538px) {
+    #cereja {
+        padding-top: 450px;
+    }
+    
+    #laranja {
+        padding-top: 450px;
+    }
+}
