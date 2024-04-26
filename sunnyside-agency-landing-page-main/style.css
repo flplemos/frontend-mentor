@@ -49,6 +49,7 @@ color: #ffff;
 }
 
 #teste3 {
+    
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -175,7 +176,7 @@ color: #ffff;
 }
 
 #background {
-    background-color: #fffbf8;
+    background-color: #FFFBF7
 }
 
 .bgfooter {
@@ -223,7 +224,6 @@ color: #ffff;
 
 .client {
     margin-bottom: 0px;
-    background-color: #ffff;
     padding-top: 100px;
     text-align: center;
     letter-spacing: 1rem;
