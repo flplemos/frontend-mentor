@@ -1,389 +1,412 @@
 @charset "UTF-8";
 
+:root {
+  --blue: hsl(200, 100%, 61%);
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --green-dark: hsl(167, 40%, 24%);
+  --blue-dark: hsl(198, 62%, 26%);
+  --green-footer: hsl(168, 34%, 41%);
+  --green-bg: hsl(168, 41%, 70%);
+  --cream: hsl(30, 100%, 99%);
+  --very-dark: hsl(212, 27%, 19%);
+  --grayish-blue: hsl(232, 10%, 55%);
+  --gray: hsl(210, 4%, 67%);
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
-
-
-
-.fraunces-700 {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
+  --fraunces: "Fraunces", serif;
+  --barlow: "Barlow", sans-serif;
 }
 
-.fraunces-900 {
-    font-family: "Fraunces", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-variation-settings:
-      "SOFT" 0,
-      "WONK" 0;
+body {
+  font-family: var(--barlow);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--grayish-blue);
+  background-color: var(--cream);
+}
+
+h1, h2, h3 {
+  font-family: var(--fraunces);
+}
+
+/* ---------- Navbar ---------- */
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: 1.75rem;
+}
+
+#menu .nav-link {
+  color: #fff;
+  font-size: 1.125rem;
+  padding: 0 1.25rem;
+}
+
+#menu .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-contact {
+  font-family: var(--fraunces);
+  font-weight: 900;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: var(--very-dark);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin-left: 1.25rem;
+}
+
+.btn-contact:hover {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  color: #fff;
+}
+
+/* menu mobile: caixa branca com triângulo */
+@media (max-width: 767.98px) {
+  #menuNavbar {
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    left: 1.5rem;
+    right: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
-  
 
-
-.barlow-semibold {
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-size: 2em;
-    font-style: normal;
+  #menuNavbar::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    border-left: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid #fff;
   }
-  
 
-  
- 
+  #menuNavbar .navbar-nav {
+    padding: 2.5rem 0;
+    gap: 1.5rem;
+  }
 
+  #menu .nav-link {
+    color: var(--grayish-blue);
+  }
 
-#menu{
-    background-color: #3cbdff;
-    
+  #menu .nav-link:hover {
+    color: var(--very-dark);
+  }
+
+  .btn-contact {
+    background-color: var(--yellow);
+    margin-left: 0;
+  }
+
+  .btn-contact:hover {
+    background-color: hsl(51, 100%, 70%);
+    color: var(--very-dark);
+  }
 }
 
-#menu1{
-color: #ffff;
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 600px;
+  background: var(--blue) url('./images/mobile/image-header.jpg') center bottom / cover no-repeat;
 }
 
-#teste3 {
-    
-    padding-left: 0px;
-    padding-right: 0px;
+.hero-content {
+  padding-top: 9rem;
+  text-align: center;
 }
 
-#teste2{
-    padding-left: 0px;
-    padding-right: 0px;
-    
-}
-
-#teste4{
-    padding-left: 0px;
-    padding-right: 0px;
-    
-}
-
-#footer{
-    text-align: center;
-    align-items: center;
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color:  #8fd3c5;
-}
-
-.teste1{
-    background-color: #3cbdff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    /* background-image: url('./images/mobile/image-header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-     */
-    
-}
-
-.imghead{
-    
-   height: 600px;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-image: url('./images/mobile/image-header.jpg');
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-  
-}
-
-.imghead h1 {
-    text-align: center;
-    padding-top: 100px;
-    font-size: 4em;
+.hero-content h1 {
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .seta {
-    margin-top: 50px;
-   
-    height: 190px;
+  height: 110px;
 }
 
-.h600{
-    height: 600px;
-}
-
-.h500 {
-    height: 500px;
-}
-
-.h300 {
-    height: 300px;
-}
-
-.h700 {
-    height: 700px;
-}
-
-.h400 {
-    height: 400px;
-}
-
-.h100 {
-    height: 100px;
-}
-
-.h376 {
-    height: 376px;
+/* ---------- Transform / Stand out ---------- */
+.img-block {
+  min-height: 310px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #egg {
-    background-position: center;
-    background-repeat: no-repeat;
-   background-size: cover;
-   background-image: url('./images/mobile/image-transform.jpg');
+  background-image: url('./images/mobile/image-transform.jpg');
 }
 
 #imgpink {
-    background-position: center;
-    background-repeat: no-repeat;
-   background-size: cover;
-   background-image: url('./images/mobile/image-stand-out.jpg');
+  background-image: url('./images/mobile/image-stand-out.jpg');
 }
 
+.text-block {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-block h2 {
+  font-weight: 900;
+  color: var(--very-dark);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-block p {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.learn-more {
+  font-family: var(--fraunces);
+  font-weight: 900;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--very-dark);
+  position: relative;
+  padding: 0 0.25rem;
+  z-index: 0;
+}
+
+.learn-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 10px;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+
+.learn-more.yellow::after { background-color: var(--yellow); }
+.learn-more.pink::after { background-color: var(--soft-red); }
+.learn-more:hover { color: var(--very-dark); }
+.learn-more:hover::after { opacity: 1; }
+
+/* ---------- Services ---------- */
+.service {
+  min-height: 600px;
+  padding: 0 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service h2 {
+  font-weight: 900;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.service p {
+  max-width: 400px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
 
 #cereja {
-    padding-top: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/mobile/image-graphic-design.jpg'); 
-    text-align: center;
+  background-image: url('./images/mobile/image-graphic-design.jpg');
+  color: var(--green-dark);
 }
 
-#laranja{
-    padding-top: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/mobile/image-photography.jpg');
-    text-align: center;
-    
+#laranja {
+  background-image: url('./images/mobile/image-photography.jpg');
+  color: var(--blue-dark);
 }
 
-#background {
-    background-color: #FFFBF7
-}
-
-.bgfooter {
-    background-color:  #8fd3c5;
-}
-
-.lead {
-    color: gray;
-    font-size: 0.9em;
-}
-
-.card {
-    background-color: #FFFBF7;
-    border: none;
-    border-radius: none;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.acard {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.829);
-    border-radius: 5%;
-    border-bottom: 7px solid #fdf2ba;
-}
-
-.text2 {
-    color: rgba(0, 0, 0, 0.644);
-}
-
-.subtexto {
-    
-    padding-top: 20px;
-    color: rgba(0, 0, 0, 0.767);
-    font-weight: 600;
-    font-size: 1.2em;
-}
-
-.avatar {
-    height: 70px;
-    border-radius: 50%;
+/* ---------- Testimonials ---------- */
+.testimonials {
+  padding: 4rem 0 5rem;
+  text-align: center;
 }
 
 .client {
-    margin-bottom: 0px;
-    padding-top: 100px;
-    text-align: center;
-    letter-spacing: 1rem;
-    font-size: 1em;
-    color: gray;
-    width: 100%;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--gray);
+  margin-bottom: 4rem;
 }
 
-#garrafa{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 2.5rem;
 }
 
-#prato{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/mobile/image-gallery-orange.jpg');
+.testimonial p {
+  color: var(--very-dark);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
 }
 
-#casquinha{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/mobile/image-gallery-cone.jpg');
+.testimonial h3 {
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: var(--very-dark);
+  margin-bottom: 0.5rem;
 }
 
-#sugarcube{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+.testimonial span {
+  font-size: 0.9rem;
+  color: var(--gray);
 }
 
-
-.imgrodape {
-    width: 100%;
-    height: 100%;
+/* ---------- Gallery ---------- */
+.gallery {
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.h1footer {
-    color: rgba(0, 0, 0, 0.603);
-    text-align: center;
-    margin-top: 50px;
+#garrafa { background-image: url('./images/mobile/image-gallery-milkbottles.jpg'); }
+#prato { background-image: url('./images/mobile/image-gallery-orange.jpg'); }
+#casquinha { background-image: url('./images/mobile/image-gallery-cone.jpg'); }
+#sugarcube { background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg'); }
+
+/* ---------- Footer ---------- */
+.bgfooter {
+  background-color: var(--green-bg);
+  padding: 4rem 1.5rem 3rem;
+}
+
+/* logo branco -> verde escuro */
+.footer-logo {
+  height: 36px;
+  filter: brightness(0) saturate(100%) invert(31%) sepia(16%) saturate(1347%) hue-rotate(118deg) brightness(93%) contrast(89%);
+  margin-bottom: 2.5rem;
 }
 
 .footerlink {
-    margin-top: 40px;
-    
-    text-align: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
 }
 
-.linkft{
-    font-size: 0.9em;
-    color: rgba(0, 0, 0, 0.548);
-    text-decoration: none;
-    padding: 30px;
+.footerlink a {
+  color: var(--green-footer);
+  text-decoration: none;
 }
 
-.buttonrodape {
-    margin-top: 0px;
-    padding: 15px;
+.footerlink a:hover {
+  color: #fff;
 }
 
-.amenu {
-    
-    font-size: 1em;
-    align-items: center;
-    justify-content: center;
-
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-#testepad {
-    
-    max-width: 100%;
+.social a img {
+  transition: filter 0.2s;
 }
 
-.btnmenu {
-    padding: 6px;
-    color: black;
-}
-
-.btnmenu1 {
-    padding: 0px;
-    
+.social a:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .cred {
-    color: rgba(0, 0, 0, 0.548);
-    font-size: 0.5em;
-    margin-top: 30px;
-    margin-bottom: 0px;
+  font-size: 0.8rem;
+  color: var(--green-footer);
+  margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-    .imghead {
-        background-image: url('images/desktop/image-header.jpg'); /* Especifica a imagem de fundo para telas maiores */
-    }
-
-    .seta {
-        margin-top: 95px;
-        height: 80px;
-    }
-
-    #egg {
-        background-image: url('images/desktop/image-transform.jpg');
-    }
-
-    #imgpink {
-        background-image: url('./images/desktop/image-stand-out.jpg');
-    }
-
-    #cereja {
-        
-        background-image: url('./images/desktop/image-graphic-design.jpg'); 
-        
-        
-    }
-
-    #laranja {
-        background-image: url('images/desktop/image-photography.jpg');
-    }
-
-    #garrafa{
-       
-        background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
-    }
-    
-    #prato{
-        
-        background-image: url('./images/desktop/image-gallery-orange.jpg');
-    }
-    
-    #casquinha{
-        
-        background-image: url('./images/desktop/image-gallery-cone.jpg');
-    }
-    
-    #sugarcube{
-       
-        background-image: url('images/desktop/image-gallery-sugarcubes.jpg');
-    }
-
+.cred a {
+  color: var(--green-dark);
 }
 
-@media screen and (min-width: 671px) {
-    #cereja {
-        padding-top: 480px;
-    }
+/* ---------- Desktop ---------- */
+@media (min-width: 768px) {
+  .hero {
+    min-height: 800px;
+    background-image: url('./images/desktop/image-header.jpg');
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.75rem;
+  }
+
+  .img-block {
+    min-height: 600px;
+  }
+
+  #egg { background-image: url('./images/desktop/image-transform.jpg'); }
+  #imgpink { background-image: url('./images/desktop/image-stand-out.jpg'); }
+
+  .text-block {
+    text-align: left;
+    align-items: flex-start;
+    padding: 4rem 3rem;
+  }
+
+  .text-block h2 {
+    font-size: 2.5rem;
+  }
+
+  .service {
+    min-height: 700px;
+    padding-bottom: 4rem;
+  }
+
+  #cereja { background-image: url('./images/desktop/image-graphic-design.jpg'); }
+  #laranja { background-image: url('./images/desktop/image-photography.jpg'); }
+
+  .testimonials {
+    padding: 10rem 0;
+  }
+
+  .client {
+    margin-bottom: 5rem;
+  }
+
+  .gallery {
+    aspect-ratio: auto;
+    height: 450px;
+  }
+
+  #garrafa { background-image: url('./images/desktop/image-gallery-milkbottles.jpg'); }
+  #prato { background-image: url('./images/desktop/image-gallery-orange.jpg'); }
+  #casquinha { background-image: url('./images/desktop/image-gallery-cone.jpg'); }
+  #sugarcube { background-image: url('./images/desktop/image-gallery-sugarcubes.jpg'); }
 }
 
-@media screen and (min-width: 538px) {
-    #cereja {
-        padding-top: 450px;
-    }
-    
-    #laranja {
-        padding-top: 450px;
-    }
+@media (min-width: 1200px) {
+  .text-block {
+    padding: 4rem 10% 4rem 15%;
+  }
+
+  .text-block p {
+    max-width: 440px;
+  }
 }
